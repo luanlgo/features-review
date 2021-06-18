@@ -1,0 +1,14 @@
+
+feature/53705 - alterar EndPoints integracão mes
+* Coisas que dei uma travadinha.
+- Entender o contexto.
+- SimpleInjector não consegue criar uma instancia de uma class parametrizada.
+- Response trouxe uma string doida q ainda n sei direito oq diabos é essa representação de dados.
+    ex.: "{\"statusCode\":200,\"content\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...\"}"
+- Demorei para achar onde as pipelines realmente fazer as requests.
+
+* Como solucionei as travadinhas.
+- SimpleInjector, arrumei outra forma de solucionar o problema.
+- Response, JsonConvert para deserializar para um objeto dinamico.
+- Request, Estava nas classes extendidas dos readers das pipelines.
+
